@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ret",
+				"return"
+			],
+			[
+				"que",
+				"queryItem"
+			],
+			[
+				"prin",
+				"printPlaylist"
+			],
+			[
+				"pla",
+				"playlists"
+			],
+			[
+				"play",
+				"playlist"
+			],
+			[
+				"pro",
+				"provincialSales"
+			],
+			[
+				"sal",
+				"salesData"
+			],
+			[
+				"ch",
+				"checkAndConvertInput"
+			],
+			[
+				"ro",
+				"rollDie"
+			],
+			[
+				"rol",
+				"rollAllDice"
+			],
+			[
+				"num",
+				"numOfDice"
+			],
+			[
+				"conc",
+				"conceptArray"
+			],
+			[
+				"min",
+				"minNum"
+			],
+			[
+				"filte",
+				"filtered"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"filt",
+				"filtered"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Thomas/lighthouse/w1d4/callbacks.js",
+		"/Users/Thomas/lighthouse/w1d3/music-library2/library.js",
+		"/Users/Thomas/lighthouse/w1d3/social-network-analysis/social-network-analysis.js",
+		"/Users/Thomas/lighthouse/w1d3/music-library/library.js",
+		"/Users/Thomas/lighthouse/w1d3/calculate-sales-tax/calculate-sales-tax.js",
+		"/Users/Thomas/lighthouse/w1d3/character-positioning/character-positioning.js",
+		"/Users/Thomas/lighthouse/w1d3/character-counting/character-counting.js",
+		"/Users/Thomas/lighthouse/w1d3/lecture/cart.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-incorrect-code3/day-calculator.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-incorrect-code/palindrome.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-incorrect-code2/print-in-frame.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-errors/pig-latin.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-errors/average.js",
+		"/Users/Thomas/lighthouse/w1d2/debugging-errors/reverse.js",
+		"/Users/Thomas/lighthouse/w1d2/dice-roller/dice-roller.js",
+		"/Users/Thomas/lighthouse/w1d2/sum.js",
+		"/Users/Thomas/lighthouse/w1d2/madlibs.js",
+		"/Users/Thomas/lighthouse/w1d1/password/password.js",
+		"/Users/Thomas/lighthouse/w1d1/pig-latin/pig-latin.js",
+		"/Users/Thomas/lighthouse/w1d1/reverse/reverse.js",
+		"/Users/Thomas/lighthouse/w1d1/concepts/concepts.js",
+		"/Users/Thomas/lighthouse/w1d1/lunch/lunch.js",
+		"/Users/Thomas/lighthouse/w1d1/min-values/min.js",
+		"/Users/Thomas/lighthouse/w1d1/simple-calculator/sum.js",
+		"/Users/Thomas/lighthouse/styles-conference/speakers.html",
+		"/Users/Thomas/lighthouse/styles-conference/venue.html",
+		"/Users/Thomas/lighthouse/styles-conference/schedule.html",
+		"/Users/Thomas/lighthouse/html/assets/stylesheets/main.css",
+		"/Users/Thomas/lighthouse/styles-conference/assets/index.html",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/loopy-lighthouse2.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/loopy-lighthouse.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/ingredients.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/packing-list.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/chorus-for.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/chorus-while.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/go-outside.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/odd.js",
+		"/Users/Thomas/lighthouse/lighthouse-js-fundamentals/even.js",
+		"/Users/Thomas/lighthouse/hello-world/readme.txt",
+		"/Users/Thomas/lighthouse/hello-world/add-tkilgour.txt",
+		"/Users/Thomas/lighthouse/javascripting/looping-through-arrays.js",
+		"/Users/Thomas/lighthouse/javascripting/accessing-array-values.js",
+		"/Users/Thomas/lighthouse/javascripting/array-filtering.js",
+		"/Users/Thomas/lighthouse/javascripting/arrays.js",
+		"/Users/Thomas/lighthouse/javascripting/for-loops.js",
+		"/Users/Thomas/lighthouse/javascripting/if-statement.js",
+		"/Users/Thomas/lighthouse/javascripting/number-to-string.js",
+		"/Users/Thomas/lighthouse/javascripting/rounding-numbers.js",
+		"/Users/Thomas/lighthouse/javascripting/numbers.js",
+		"/Users/Thomas/lighthouse/javascripting/revising-strings.js",
+		"/Users/Thomas/lighthouse/javascripting/string-length.js",
+		"/Users/Thomas/lighthouse/javascripting/strings.js",
+		"/Users/Thomas/lighthouse/javascripting/variables.js",
+		"/Users/Thomas/lighthouse/javascripting/introduction.js",
+		"/Users/Thomas/lighthouse/javascripting/for-loop.js",
+		"/Users/Thomas/lighthouse/javascripting/string.js",
+		"/Users/Thomas/Dropbox/Coding/Test/test.js",
+		"/Users/Thomas/Library/Application Support/Sublime Text 3/Packages/User/JSC.sublime-build",
+		"/Users/Thomas/Desktop/Anna Messages Archive",
+		"/Users/Thomas/Documents/sublime-practice/song-1.txt",
+		"/Users/Thomas/Documents/sublime-practice/song-2.txt",
+		"/Users/Thomas/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Thomas/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"if",
+			"trackID",
+			"].",
+			"currentProvinceTaxRate",
+			"console",
+			"pass",
+			"obfuscate(password) {\n  // body...\n}\nfor (var i = 0; i < chars.length; i++) {\n  if (chars[i] == \"a\") {\n    chars[i] = \"4\";\n  } else if (chars[i] == \"e\") {\n    chars[i] = \"3\";\n  } else if (chars[i] == \"o\") {\n    chars[i] = \"0\";\n  } else if (chars[i] == \"l\") {\n    chars[i] = \"1\";\n  }\n}",
+			"3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"char",
+			"multiples[0]"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/JSC.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
