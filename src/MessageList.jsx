@@ -8,11 +8,10 @@ class MessageList extends Component {
       <div id="message-list">
         {
           this.props.chatHistory.map((result) => {
-            console.log(result.type);
             switch (result.type) {
               case 'incomingMessage':
                 return (
-                  <Message userName={result.username} content={result.content} key={result.id}/>
+                  <Message userName={result.user.name} content={result.content} userColor={result.user.color} key={result.id}/>
                 )
                 break;
               case 'incomingNotification':

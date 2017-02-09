@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentUser: {name: ''}, // optional. if currentUser is not defined, it means the user is Anonymous
+      currentUser: {name: '', color: '#000000'}, // optional. if currentUser is not defined, it means the user is Anonymous
       chatHistory: [],
       usersOnline: 0
     };
@@ -25,10 +25,13 @@ class App extends Component {
         this.setState({usersOnline: newMessage[0].content});
         break;
 
+      case 'incomingUserColor':
+        this.setState({currentUser: {name: this.state.currentUser.name, color: newMessage[0].content}});
+        break;
+
       default:
         throw new Error(`Unknown event type ${newMessage[0].type}`)
     }
-
   }
 
   componentDidMount() {
@@ -54,7 +57,7 @@ class App extends Component {
 
     if (oldUser !== newUser) {
       this.setState({
-        currentUser: {name: newUser}
+        currentUser: {name: newUser, color: this.state.currentUser.color}
       })
 
       this._postNotification(this._anonChecker(oldUser), this._anonChecker(newUser));
@@ -64,7 +67,7 @@ class App extends Component {
   _postMessage(content) {
     const newMessage = {
       type: 'postMessage',
-      username: this._anonChecker(this.state.currentUser.name),
+      user: {name: this._anonChecker(this.state.currentUser.name), color: this.state.currentUser.color},
       content: content
     }
 

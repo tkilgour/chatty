@@ -19,7 +19,7 @@ const wss = new SocketServer({ server });
 const chatHistory = [{
         type: 'incomingMessage',
         id: "b496cd46-5f51-4867-8056-beacc5f64406",
-        username: 'ChattyBot 🤖',
+        user: {name: 'ChattyBot 🤖', color: 'black'},
         content: 'Welcome to Chatty! I hope you enjoy your stay.'
       }];
 
@@ -36,6 +36,21 @@ const updateUsersOnline = () => {
   })
 }
 
+const updateUserColor = (client) => {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++ ) {
+      color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  const userColor = [{
+      type: 'incomingUserColor',
+      content: color
+    }]
+
+  client.send(JSON.stringify(userColor));
+}
+
 // Set up a callback that will run when a client connects to the server
 // When a client connects they are assigned a socket, represented by
 // the ws parameter in the callback.
@@ -48,13 +63,15 @@ wss.on('connection', (ws) => {
 
   ws.send(JSON.stringify(chatHistory));
 
+  updateUserColor(ws);
+
   ws.on('message', (e) => {
     switch (JSON.parse(e).type) {
       case 'postMessage':
         const newMessage = {
           type: 'incomingMessage',
           id: uuid.v4(),
-          username: JSON.parse(e).username,
+          user: {name: JSON.parse(e).user.name, color: JSON.parse(e).user.color},
           content: JSON.parse(e).content
         }
 
