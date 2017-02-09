@@ -11,7 +11,7 @@ class MessageList extends Component {
             switch (result.type) {
               case 'incomingMessage':
                 return (
-                  <Message userName={result.user.name} content={result.content} userColor={result.user.color} key={result.id}/>
+                  <Message userName={result.user.name} img={result.img} content={result.content} userColor={result.user.color} key={result.id}/>
                 )
                 break;
               case 'incomingNotification':

@@ -51,6 +51,23 @@ const updateUserColor = (client) => {
   client.send(JSON.stringify(userColor));
 }
 
+const extractImg = (string) => {
+  const regex = /(http|https):\/\/.+(jpg|png|gif)/;
+  const output = regex.exec(string);
+
+  if (output) {
+    return {
+      url: output[0],
+      text: string.replace(output[0], '')
+    }
+  } else {
+    return {
+      url: '',
+      text: string
+    }
+  }
+}
+
 // Set up a callback that will run when a client connects to the server
 // When a client connects they are assigned a socket, represented by
 // the ws parameter in the callback.
@@ -66,13 +83,17 @@ wss.on('connection', (ws) => {
   updateUserColor(ws);
 
   ws.on('message', (e) => {
+
+
+
     switch (JSON.parse(e).type) {
       case 'postMessage':
         const newMessage = {
           type: 'incomingMessage',
           id: uuid.v4(),
           user: {name: JSON.parse(e).user.name, color: JSON.parse(e).user.color},
-          content: JSON.parse(e).content
+          content: extractImg(JSON.parse(e).content).text,
+          img: extractImg(JSON.parse(e).content).url
         }
 
         chatHistory.push(newMessage);
