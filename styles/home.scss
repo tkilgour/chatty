@@ -17,6 +17,14 @@ nav {
 }
 nav h1 {
   margin: 0;
+  display: inline-block;
+}
+
+nav #user-count {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
 }
 
 #message-list {
