@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 
 
 class ChatBar extends Component {
+
   handleKeyPress(e) {
     if(e.key === 'Enter'){
       this.props._postMessage(e.target.value);
@@ -10,7 +11,6 @@ class ChatBar extends Component {
   }
 
   render() {
-      console.log('Rendering <ChatBar/>');
     return (
       <div className="wrapper">
         <footer>

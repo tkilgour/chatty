@@ -2,9 +2,8 @@ import React, {Component} from 'react';
 
 
 class Message extends Component {
-  render() {
-    console.log('Rendering <Message/>');
 
+  render() {
     const checkImg = (img) => {
       if (img != '') {
         return <img src={this.props.img}/>

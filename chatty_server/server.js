@@ -68,11 +68,16 @@ const extractImg = (string) => {
   }
 }
 
-// Set up a callback that will run when a client connects to the server
-// When a client connects they are assigned a socket, represented by
-// the ws parameter in the callback.
+const chattyBot = (string) => {
+  string = string.toLowerCase();
+
+  if (string.search('chattybot') >= 0) {
+
+  }
+}
+
+
 wss.on('connection', (ws) => {
-  console.log('Client connected');
 
   numOfClients++;
 
@@ -84,8 +89,7 @@ wss.on('connection', (ws) => {
 
   ws.on('message', (e) => {
 
-
-
+    // parses message to determine if it's a message or notification
     switch (JSON.parse(e).type) {
       case 'postMessage':
         const newMessage = {
@@ -97,6 +101,18 @@ wss.on('connection', (ws) => {
         }
 
         chatHistory.push(newMessage);
+
+        const botMessage = {
+          type: 'incomingMessage',
+          id: uuid.v4(),
+          user: {name: 'ChattyBot 🤖', color: 'black'},
+          content: '🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖🤖'
+        }
+
+        string = JSON.parse(e).content.toLowerCase();
+        if (string.search('chattybot') >= 0) {
+          chatHistory.push(botMessage);
+        }
 
         wss.clients.forEach((client) => {
           client.send(JSON.stringify(chatHistory));
@@ -120,7 +136,6 @@ wss.on('connection', (ws) => {
   });
   // Set up a callback for when a client closes the socket. This usually means they closed their browser.
   ws.on('close', () => {
-    console.log('Client disconnected');
     numOfClients--;
 
     updateUsersOnline();

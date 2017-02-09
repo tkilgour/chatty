@@ -4,6 +4,7 @@ import ChatBar from './ChatBar.jsx';
 
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +17,7 @@ class App extends Component {
   _onReceiveMessage = (message) => {
     const newMessage = JSON.parse(message.data);
 
+    // parses message to check if it's the message history, number of users online, or user color
     switch (newMessage[0].type) {
       case 'incomingMessage':
         this.setState({chatHistory: newMessage})
@@ -76,7 +78,6 @@ class App extends Component {
 
 
   render() {
-    console.log("Rendering <App/>");
     return (
       <div className="app">
         <nav>
